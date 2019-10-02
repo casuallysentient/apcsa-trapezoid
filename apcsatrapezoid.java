@@ -1,8 +1,9 @@
 import java.util.Scanner;
 
-public class apcsa-trapezoid {
+public class apcsatrapezoid {
   public static void main(String[] args) {
-    System.out.print("Enter the trapezoid's top length: ");
+    Scanner in = new Scanner(System.in);
+    System.out.print("\nEnter the trapezoid's top length: ");
     double top = in.nextDouble();
     System.out.print("Enter the trapezoid's bottom length: ");
     double bottom = in.nextDouble();
@@ -11,7 +12,7 @@ public class apcsa-trapezoid {
 
     double area = ((top + bottom) / 2) * height;
 
-    System.out.printf("The area of the trapezoid is %,.1f.", area);
+    System.out.printf("\nThe area of the trapezoid is %,.1f.\n", area);
 
     in.close();
   }
